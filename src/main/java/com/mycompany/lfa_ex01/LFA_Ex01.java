@@ -15,7 +15,7 @@ public class LFA_Ex01 {
         AutomatoSimples automato = new AutomatoSimples(); 
         Scanner scanner = new Scanner(System.in);         
 
-        System.out.println("Deseja cadastrar um automato? (s/n)");
+        System.out.println("Deseja cadastrar um automato? (s/n/qualquer tecla para sair)")
         String resposta = scanner.nextLine().trim().toLowerCase();
 
         if (resposta.equals("s")) {
@@ -46,10 +46,14 @@ public class LFA_Ex01 {
             String sentencaUsuario = scanner.nextLine();
             testarSentenca(automato, sentencaUsuario); 
 
-        } else {
+        } if(resposta.equals("n")) {
             System.out.println("Digite uma sentenca para testar:");
             String sentencaUsuario = scanner.nextLine();
             testarAutomato(automato, "src/main/java/com/mycompany/lfa_ex01/Automato01.txt", sentencaUsuario);
+        } else {
+            System.out.println("Fechando Programa.");
+            scanner.close();
+            return;
         }
         scanner.close(); 
     }
