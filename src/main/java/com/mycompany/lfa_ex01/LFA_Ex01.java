@@ -15,7 +15,7 @@ public class LFA_Ex01 {
         AutomatoSimples automato = new AutomatoSimples(); 
         Scanner scanner = new Scanner(System.in);         
 
-        System.out.println("Deseja cadastrar um automato? (s/n/qualquer tecla para sair)")
+        System.out.println("Deseja cadastrar um automato? (s/n/qualquer tecla para sair)");
         String resposta = scanner.nextLine().trim().toLowerCase();
 
         if (resposta.equals("s")) {
