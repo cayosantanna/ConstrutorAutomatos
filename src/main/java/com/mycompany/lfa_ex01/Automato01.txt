@@ -1,0 +1,13 @@
+finais;q0;q3;
+q0;a;q1;
+q0;b;q5;
+q1;b;q2;
+q2;b;q1;
+q1;a;q3;
+q2;a;q4;
+q3;a;q3;
+q4;a;q4;
+q5;c;q6;
+q6;c;q5;
+q5;b;q1;
+q6;b;q2;
