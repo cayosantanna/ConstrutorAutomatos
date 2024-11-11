@@ -20,8 +20,9 @@ public class LFA_Ex01 {
 
         if (resposta.equals("s")) {
             List<Transicao> transicoes = new ArrayList<>(); 
+
+            System.out.println("Digite as transicoes (estadoOrigem;simbolo;estadoDestino) ou 'fim' para encerrar:");
             while (true) {
-                System.out.println("Digite as transicoes (estadoOrigem;simbolo;estadoDestino) ou 'fim' para encerrar:");
                 String linha = scanner.nextLine();
                 if (linha.equalsIgnoreCase("fim")) break;
 
